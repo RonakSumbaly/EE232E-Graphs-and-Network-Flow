@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "header <- c(\"UID:604591897\", \"email:rsumbaly@ucla.edu\", \"Undergrad or Grad:Grad\")\n\n# read SNP data fr\nSNP_data <- read.table(\"SNP_Status.txt\", header = TRUE)\nhead(SNP_data)",
+    "created" : 1460958861659.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "188886855",
+    "id" : "26D80895",
+    "lastKnownWriteTime" : 1460958997,
+    "last_content_update" : 1460959075111,
+    "path" : "~/Dropbox/Masters/Quarter 3/CM 224 - Computational Genetics/Programming Assignment/PA 1/PA1.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

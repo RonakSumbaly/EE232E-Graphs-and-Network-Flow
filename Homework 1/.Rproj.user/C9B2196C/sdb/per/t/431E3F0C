@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#  Read in a table (in csv format) from standard input:\nTable = data.matrix(read.csv( file(\"HW1_demo_input.csv\"), header=TRUE ))\noutput_file = \"HW1_output.csv\"\n\nnegative_log_likelihood = function(theta){\n  -log_likelihood(theta)\n} \n\nlog_likelihood = function(theta) {\n  sum( log(dgamma(Dataset, theta[1], rate=theta[2])) )\n}\n\nif (file.exists(output_file)) {\n  file.remove(output_file)\n}\n\nfor (j in 1:ncol(Table)) {\n  Dataset = Table[,j]        #  j-th dataset = the j-th column of the table\n  initial_theta = c(0.1, 0.1)\n  \n  fit = suppressWarnings( optim(initial_theta, negative_log_likelihood) )\n  \n  alpha = round(fit$par[1])\n  beta  = round(fit$par[2])\n  \n  # print integer parameters\n  csv_output = sprintf(\"gamma,%d,%d\\n\", alpha, beta)\n  cat(csv_output)\n  cat(csv_output,file = output_file, append = TRUE)\n}",
+    "created" : 1460352258423.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3239140324",
+    "id" : "431E3F0C",
+    "lastKnownWriteTime" : 1460353492,
+    "last_content_update" : 1460353492041,
+    "path" : "~/Documents/Masters/CS 249/Homework/HW1/HW1_Maximum_Likelihood_Gamma.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

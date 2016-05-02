@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "gamma,3,1\ngamma,3,2\ngamma,3,3\ngamma,3,4\ngamma,3,5\ngamma,3,6\n",
+    "created" : 1460353121982.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "534294691",
+    "id" : "B0212352",
+    "lastKnownWriteTime" : 1460168330,
+    "last_content_update" : 1460168330,
+    "path" : "~/Documents/Masters/CS 249/Homework/HW1/HW1_demo_output.csv",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
